@@ -1,9 +1,19 @@
-function prime(num){
- for(let i=0; i<=num; i++){
-  if(num%i){
-    return true;
+function prime(number){
+ let factors=0;
+ for(let i=1; i<=number; i++){
+  if(number%i==0){
+    factors++;
    }
- }
+} 
+  if(factors==2){
+    return true;
+  } 
    return false;
 }
-  prime(17);
+
+let ans=prime(17);
+  if(ans==true){
+    console.log("Prime");
+  } else {
+    console.log("Not prime");
+}
