@@ -1,3 +1,4 @@
+
 function prime(number){
  let factors=0;
  for(let i=1; i<=number; i++){
@@ -11,9 +12,10 @@ function prime(number){
    return false;
 }
 
-let ans=prime(17);
-  if(ans==true){
+let answer=prime(17);
+  if(answer==true){
     console.log("Prime");
   } else {
     console.log("Not prime");
 }
+
